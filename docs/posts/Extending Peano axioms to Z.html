@@ -1,22 +1,59 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <title>Math, CS &amp; Robots</title>
-    <link href="https://laughinginloud.github.io/atom.xml" rel="self" type="application/rss+xml" />
-  <updated>2020-10-27T21:16:SZ</updated>
-  <author>
-      <name>laughinginloud</name>
-  </author>
-  <id>https://laughinginloud.github.io/</id>
+<!DOCTYPE html>
+<html lang="en">
+<head profile="http://www.w3.org/2005/10/profile">
+    <meta charset="UTF-8">
+    <meta name="description" content="Math, CS &amp; Robots">
+    <meta name="author" content="laughinginloud">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Extending Peano axioms to Z">
+    <meta name="twitter:description" content="Experimenting with Peano axioms">
+    <meta name="twitter:image" content="https://laughinginloud.github.io/images/peano.jpg">
+    <title>Extending Peano axioms to Z</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a id="beacon" href="/">
+                <div id="home-text"> HOME </div>
+            </a>
+        </nav>
+    
+        <div class="right-sidebar">
+            <a class="ext-link" href="https://github.com/laughinginloud">
+            <img src="/images/github-logo.png" alt="Github Profile"/>
+        </a>
 
-  <entry>
-      <title>Extending Peano axioms to Z</title>
-      <link href="https://laughinginloud.github.ioposts\Extending Peano axioms to Z.html"/>
-      <id>https://laughinginloud.github.ioposts\Extending Peano axioms to Z.html</id>
-      <updated>2020-10-27T00:00:SZ</updated>
-      <category term="maths"/>
-      <category term="haskell"/>
-      <summary>Experimenting with Peano axioms</summary>
-      <content type="html"><![CDATA[<h1 id="extending-peano-axioms-to-mathbbz">Extending Peano axioms to $\mathbb{Z}$</h1>
+        <div id="theme-button">DAY</div>
+        </div>
+    </header>
+
+<div id="page">
+    <div class="wrapper">
+        <div class="masthead">
+            <span class="title">
+                Extending Peano axioms to Z
+            </span>
+            <br>
+
+            <img class="post-image" src="/images/peano.jpg">
+            <br>
+            <span class="byline">by laughinginloud</span>
+            <br>
+            <span class="date">Oct 27, 2020</span>
+            <br>
+            <div class="metadata">
+            </div>
+            <div class="tags">
+              <span class="tag maths">maths</span>
+              <span class="tag haskell">haskell</span>
+            </div>
+        </div>
+    </div>
+    <article class="post">
+        <h1 id="extending-peano-axioms-to-mathbbz">Extending Peano axioms to $\mathbb{Z}$</h1>
 <h2 id="introduction">Introduction</h2>
 <p>I’m a simple man: to make me happy you just need recursion. So, when at the beginning of my Haskell journey I was introduced to Peano axioms, I was ecstatic. So simple, so elegant, yet so powerful. I fell in love with them.</p>
 <p>A few weeks ago I started preparing some little examples to introduce a few of my friends to functional programming, so I decided to implement the natural numbers using these axioms, to show them the power of the type system. So I began wondering: how can I take this further? How can I extend these axioms to the integers?</p>
@@ -269,16 +306,29 @@
 <p>This time I’ve decided to manually implement <code>Eq</code> just to be sure that $N(0) = 0$. It should never happen, but better safe than sorry.</p>
 <h2 id="conclusion">Conclusion</h2>
 <p>Okay, we’ve done it: we managed to extend Peano axioms to $\mathbb{Z}$. Nice! So, should you use this definition of <code>Int</code> instead of GHC’s? <em>Absolutely not</em>. This was just a game, a way to flex the muscles of Haskell’s type system. This definition is highly inefficient. I made it only for fun and to relax a bit. That being said, feel free to test it yourself and maybe improve it.</p>
-<p>So, you’ve reached the end of this article. This was a not-so-serious diary of a little game of mine, to basically test how much I knew about Haskell. I’ve come a long way, but the road ahead is still long. I hope that you had fun time reading this and maybe you even learned one or two new things along the way. Goodbye!</p>]]></content>
-  </entry>
-  <entry>
-      <title>Sample Post</title>
-      <link href="https://laughinginloud.github.ioposts\sample-post.html"/>
-      <id>https://laughinginloud.github.ioposts\sample-post.html</id>
-      <updated>2019-01-01T00:00:SZ</updated>
-      <category term="slick"/>
-      <category term="site"/>
-      <summary>My first blog post using slick</summary>
-      <content type="html"><![CDATA[<p>Welcome to your first blog post!</p>]]></content>
-  </entry>
-</feed>
+<p>So, you’ve reached the end of this article. This was a not-so-serious diary of a little game of mine, to basically test how much I knew about Haskell. I’ve come a long way, but the road ahead is still long. I hope that you had fun time reading this and maybe you even learned one or two new things along the way. Goodbye!</p>
+
+        <br>
+        <br>
+
+        <!--Share buttons-->
+        <div class="social-buttons">
+            <a href="https://twitter.com/share" class="twitter-share-button"
+                                                data-url="https://laughinginloud.github.io" data-text="Check out: Extending Peano axioms to Z - " data-via="null">Tweet</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <div class="fb-like" data-href="" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
+</article>
+
+</div>
+
+<footer>
+    Built with Haskell using <a href="https://github.com/ChrisPenner/slick">slick</a> ❤️
+</footer>
+
+<link href='https://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<script src="/js/main.js"></script>
+</body>
+</html>
